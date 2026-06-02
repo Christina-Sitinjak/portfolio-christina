@@ -1,84 +1,122 @@
-export type Project = {
-  title: string;
+export interface Project {
   slug: string;
-  image: string;
+  title: string;
   desc: string;
-  full: string[];
+  image: string;
   tags: string[];
+  role: string;
+  period: string;
+  highlights: string[];
+  full: string[];
   live: string;
   github: string;
-};
+}
 
 export const projects: Project[] = [
   {
-    title: "Sistem Informasi Program Studi Manajemen Rekayasa IT Del",
-    slug: "si-mr-it-del",
-    image: "/projects/mr-del.jpg",
-    desc: "Full-stack system with UI design, system flow, and backend logic for 200+ students. Implemented core front-end features and data handling.",
-    full: ["An integrated information system designed for students, parents, and the general public to access academic and organizational activities within the Management Engineering study program at IT Del. The platform provides structured information such as student activities, achievements, program initiatives, available facilities, and the program’s vision and mission.",
-  "The system supports two user roles. Administrators manage the entire content, including adding, updating, and deleting information, while public users can browse all content through an interface designed for easy navigation and accessibility. This structure ensures that campus information is delivered accurately, clearly, and in an organized way."
-],
-    tags: ["Full Stack", "UI/UX", "MySQL", "System Design", "Figma"],
-    live: "#",
-    github: "#"
+    slug: 'lppm-it-del',
+    title: 'LPPM Information System — Institut Teknologi Del',
+    desc: 'A web-based information system for the Institute of Research and Community Service (LPPM) at IT Del, covering research management, community service data, and reporting — built with full system analysis and database design from scratch.',
+    image: '/projects/images/lppm.png',
+    tags: ['Laravel', 'PHP', 'MySQL', 'ERD', 'BPMN', 'System Analysis'],
+    role: 'Project Manager · System Analyst · Backend Developer',
+    period: '2025 – Present',
+    highlights: [
+      'Produced full system documentation: BPMN, use cases, ERD, CDM, PDM',
+      'Designed complete database architecture and entity relationships',
+      'Developed backend modules for admin and guest-facing interfaces',
+      'Led team coordination and ensured deliverables met specifications',
+    ],
+    full: [
+      'The LPPM Information System is a web-based platform developed for the Institute of Research and Community Service (Lembaga Penelitian dan Pengabdian kepada Masyarakat) at Institut Teknologi Del. The system centralizes the management of research activities, community service programs, and reporting processes that were previously handled manually.',
+      'As Project Manager and System Analyst, I led the team from the requirements gathering phase through to implementation. I was responsible for producing the complete system documentation including BPMN process flows, use case diagrams, Entity Relationship Diagrams (ERD), Conceptual Data Models (CDM), and Physical Data Models (PDM).',
+      'On the technical side, I designed the full database architecture — defining all entities, attributes, and relational logic — and developed the backend modules for both the admin dashboard and the guest-facing interface. This project is my most comprehensive end-to-end system development experience to date, combining analytical rigor with hands-on backend implementation.',
+    ],
+    live: '#',
+    github: '#',
   },
   {
-    title: "Warehouse Inventory Management App",
-    slug: "warehouse-inventory",
-    image: "/projects/warehouse.jpg",
-    desc: "Java Swing + MySQL desktop application with 4 CRUD modules, validation, search function, and structured MySQL schema.",
-    full:["A desktop application built to help warehouse staff manage inventory more efficiently. The system includes four main CRUD modules that support recording, updating, removing, and searching inventory data.",
-  "Developed using Java Swing and connected to a structured MySQL database, the application ensures smooth data processing and retrieval. Each feature includes input validation to minimize user errors.",
-  "With its simple interface and fast search functionality, the application improves stock monitoring accuracy and streamlines day-to-day warehouse operations."],
-    tags: ["Java Swing", "MySQL", "Desktop App", "CRUD"],
-    live: "#",
-    github: "#"
+    slug: 'medflow',
+    title: 'MedFlow — AI-Based Smart Angkot & Traffic Prediction System',
+    desc: 'An AI-powered mobile application for predicting public transport (angkot) routes and traffic conditions in Medan City — winner of 2nd Place at Medan Coding Competition (MCC) 2026, North Sumatra level.',
+    image: '/projects/images/medflow.png',
+    tags: ['Mobile App', 'AI', 'Flutter', 'Traffic Prediction', 'MCC 2026'],
+    role: 'Team Leader · System Analyst',
+    period: 'May 2026',
+    highlights: [
+      'Led a 4-member team in a North Sumatra-level Mobile Apps Competition at UMSU',
+      'Responsible for system analysis, role assignment, and solution planning',
+      'Built AI-powered prediction system for Medan public transport & traffic',
+      'Awarded 2nd Place — MCC 2026 Mobile Apps Competition',
+    ],
+    full: [
+      'MedFlow is an AI-based mobile application designed to address the challenge of unpredictable public transport (angkot) schedules and traffic congestion in Medan City. The app provides real-time route predictions and traffic forecasting to help commuters plan their journeys more efficiently and sustainably.',
+      'This project was developed for the Medan Coding Competition (MCC) 2026 — a Mobile Apps Competition held at Universitas Muhammadiyah Sumatera Utara (UMSU), open to university students across North Sumatra. Our team of four competed against other institutions with a focus on creating digital solutions for real urban mobility problems.',
+      'As Team Leader and System Analyst, I was responsible for defining the overall system architecture, breaking down the feature scope, assigning roles to team members, and ensuring the project vision stayed aligned with the competition objectives. The team successfully brought home 2nd Place in the Mobile Apps category.',
+    ],
+    live: '#',
+    github: '#',
   },
   {
-    title: "Redesign Rumah Kreatif Toba",
-    slug: "redesign-rumah-kreatif-toba",
-    image: "/projects/rkt-redesign.jpg",
-    desc: "Led UI redesign using heuristic evaluation, competitive analysis, and SUS testing. Produced high-fidelity prototypes and ran usability tests on 10 respondents.",
-    full:["A research-driven UX redesign project for the Rumah Kreatif Toba website. The process began with heuristic evaluation and competitive analysis to identify usability issues in the existing interface.",
-  "Based on the findings, the information architecture and navigation flow were restructured to create a more intuitive experience. High-fidelity prototypes were then developed using Figma to visualize the improved interface.",
-  "The prototype was tested with 10 respondents through usability testing to measure effectiveness and user satisfaction. Feedback was analyzed and applied to refine the final design, resulting in a more responsive, user-friendly, and goal-aligned interface."],
-    tags: ["UI/UX", "Figma", "Usability Testing", "Heuristic Evaluation"],
-    live: "#",
-    github: "#"
+    slug: 'tobareads',
+    title: 'TobaReads — Mobile Application',
+    desc: 'A mobile reading application themed around Lake Toba culture, developed as the 3rd Semester Capstone Project. The app promotes local literature and reading habits among students.',
+    image: '/projects/images/tobareads.png',
+    tags: ['Flutter', 'Dart', 'Mobile App', 'UI/UX'],
+    role: 'Project Manager · System Analyst · Frontend Developer',
+    period: '2024 – 2025',
+    highlights: [
+      'Designed system architecture and coordinated the development team',
+      'Analyzed user requirements and documented the full system flow',
+      'Contributed to the development of the application user interface',
+    ],
+    full: [
+      'TobaReads is a mobile application developed as the 3rd Semester Capstone Project (Proyek Akhir 3). The app is themed around Lake Toba culture and aims to promote local literature and healthy reading habits among students and the surrounding community.',
+      'As Project Manager and System Analyst, I led the team in planning the project scope, analyzing user requirements, and documenting the full system flow. I also took on a frontend development role for this project — unlike my other projects where I focus primarily on backend and database design — contributing directly to the user interface and overall user experience of the application.',
+      'The project gave me a broader understanding of mobile UI development using Flutter, while also reinforcing my ability to manage a team through the full software development lifecycle from planning to delivery.',
+    ],
+    live: '#',
+    github: '#',
   },
   {
-    title: "Sistem Informasi Kemahasiswaan IT Del",
-    slug: "sistem-kemahasiswaan-it-del",
-    image: "/projects/kemahasiswaan.jpg",
-    desc: "Front-end developer for a multi-page student system with 500+ users. Built using Inertia.js and automated 20+ test cases.",
-    full:[  "A multi-page information system used by more than 500 users, including students, organizational admins (BEM and MPM), the student affairs division, and the campus counseling unit. The system streamlines the management of student activities through an integrated and accessible interface.",
-  "In this project, I developed over 20 automated test cases using Katalon and Cypress to ensure feature stability and reliability across the entire system. The platform improves data accuracy and provides a more efficient workflow for campus administrative processes."],
-    tags: ["Inertia.js", "Laravel", "Frontend", "Testing", "Katalon", "Cypress","PostgreSQL"],
-    live: "#",
-    github: "#"
+    slug: 'uec-laguboti',
+    title: 'Website — Universal English Course (UEC) Laguboti',
+    desc: 'A fully functional website for an English language course institution in Laguboti, enabling course registration, schedule management, and student information — built as the 2nd Semester Capstone Project.',
+    image: '/projects/images/uec.png',
+    tags: ['PHP', 'MySQL', 'HTML', 'CSS', 'Bootstrap', 'Laravel'],
+    role: 'Project Manager · System Analyst · Backend Developer',
+    period: '2024',
+    highlights: [
+      'Led the project from requirements gathering to deployment',
+      'Conducted system requirements analysis and designed the database structure',
+      'Contributed to backend development of the full website',
+    ],
+    full: [
+      'The UEC Laguboti website was developed as the 2nd Semester Capstone Project (Proyek Akhir 1) for Universal English Course, an English language institution based in Laguboti. The system provides a digital platform for the institution to manage course registrations, class schedules, and student information.',
+      'As Project Manager and System Analyst, I led the team through the full project lifecycle — from gathering requirements and designing the system to implementation and final delivery. I conducted the system analysis, designed the database structure, and contributed directly to the backend development of the website.',
+      'This was my first major capstone project and marked the beginning of my pattern of combining system analysis with backend development — planning the data architecture before writing any code. It laid the foundation for how I approach all subsequent projects.',
+    ],
+    live: '#',
+    github: '#',
   },
   {
-    title: "B-Call App",
-    slug: "b-call-app",
-    image: "/projects/bcall.jpg",
-    desc: "Designed and built the mobile front-end for real-time calorie and BMI tracking. Created interface flows and contributed to app logic.",
-    full:[ "A mobile application designed to help users track calorie intake, physical activity, and BMI estimates in real time. The project focused on creating a clean, modern, and lightweight interface for daily use.",
-  "I contributed to the UI design using Figma and developed the front-end interface with SwiftUI. Users can calculate their ideal body weight based on height and weight inputs and estimate calories burned during running in real time.",
-  "In addition to the interface, I assisted in implementing basic logic for BMI and calorie calculations to ensure the application provides accurate and easy-to-understand results."],
-    tags: ["Swift UI","Mobile App", "UI/UX", "Figma", "Frontend"],
-    live: "#",
-    github: "#"
+    slug: 'rumah-kreatif-toba',
+    title: 'Redesign — Rumah Kreatif Toba Website',
+    desc: 'A UI/UX redesign project for the Rumah Kreatif Toba website, focused on improving user experience, visual identity, and modern layout — designed entirely in Figma with new wireframes and interactive prototypes.',
+    image: '/projects/images/rkt.png',
+    tags: ['Figma', 'UI/UX', 'Wireframing', 'Prototyping', 'Redesign'],
+    role: 'UI/UX Designer',
+    period: '2024 – 2025',
+    highlights: [
+      'Redesigned the full website interface using Figma',
+      'Analyzed user needs and created updated wireframes and interactive prototypes',
+    ],
+    full: [
+      'This project involved a full UI/UX redesign of the Rumah Kreatif Toba website — a platform supporting the creative economy community around Lake Toba. The goal was to modernize the visual identity, improve the information hierarchy, and create a more intuitive user experience.',
+      'Working individually, I used Figma to analyze the existing design, identify usability issues, and produce an updated set of wireframes and high-fidelity prototypes. The redesign covered the landing page, program information sections, and contact flows.',
+      'Although UI/UX design is not my primary strength, this project gave me valuable insight into the design process and how thoughtful interface decisions directly impact user behavior — knowledge that has since informed how I think about backend data structure and feature scope in my other projects.',
+    ],
+    live: '#',
+    github: '#',
   },
-  {
-    title: "Whisper + DeBERTa Coherence Evaluation System",
-    slug: "whisper-deberta-coherence",
-    image: "/projects/ielts-ai.jpg",
-    desc: "Front-end developer for a system evaluating IELTS Speaking coherence using Whisper and DeBERTa v3-base. Contributed to UI/UX, dataset prep, and documentation.",
-    full: [ "An automated evaluation system for assessing coherence in IELTS Speaking responses using Whisper for speech-to-text processing and DeBERTa v3-base as the main NLP model.",
-  "I contributed to designing the user interface and the evaluation workflow to make the system intuitive and easy to use. I also supported dataset preparation, documentation writing, and feature integration.",
-  "The system generates automatic transcriptions, analyzes answer structure, and produces coherence scores instantly. This approach creates a more consistent, fast, and effective evaluation tool for learners."],
-    tags: ["AI", "NLP", "Whisper", "DeBERTa", "Next.js","Frontend"],
-    live: "#",
-    github: "#"
-  }
 ];
