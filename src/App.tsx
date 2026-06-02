@@ -5,7 +5,6 @@ import {
   Github,
   Linkedin,
   Mail,
-  ExternalLink,
   Menu,
   X,
   Code,

@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { projects } from './projectsData';
-import { ArrowLeft, Globe, Github, Calendar, User, Tag } from 'lucide-react';
+import { ArrowLeft, Globe, Github } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function ProjectDetailPage() {
