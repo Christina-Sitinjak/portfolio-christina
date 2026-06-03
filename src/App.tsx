@@ -893,29 +893,6 @@ export default function Portfolio() {
                 </div>
               </div>
             </div>
-
-            <div className="md:hidden mt-8 space-y-8">
-              <div className="flex justify-between items-start">
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center text-white shadow-lg flex-shrink-0">1</div>
-                  <div>
-                    <h4 className="font-semibold">Institut Teknologi Del</h4>
-                    <p className="text-sm text-gray-500">D3 Information Technology • GPA 3.62 / 4.00</p>
-                  </div>
-                </div>
-                <span className="text-sm text-blue-600 dark:text-blue-400">2024 – Present</span>
-              </div>
-              <div className="flex justify-between items-start">
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-r from-pink-500 to-blue-500 flex items-center justify-center text-white shadow-lg flex-shrink-0">2</div>
-                  <div>
-                    <h4 className="font-semibold">SMAN 1 Laguboti</h4>
-                    <p className="text-sm text-gray-500">Senior High School • Science Major</p>
-                  </div>
-                </div>
-                <span className="text-sm text-blue-600 dark:text-blue-400">Jul 2020 – Apr 2023</span>
-              </div>
-            </div>
           </div>
         </div>
       </motion.section>
