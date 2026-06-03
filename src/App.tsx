@@ -368,7 +368,7 @@ export default function Portfolio() {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
             <motion.a
-              href="/pdf/CV_Christina_Adelia_Sitinjak_EN.pdf"
+              href="/pdf/Resume_Christina_Adelia_Sitinjak.pdf"
               download
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -436,7 +436,7 @@ export default function Portfolio() {
                 <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">System Analyst • Backend Developer</p>
 
                 <div className="flex gap-3 mb-5">
-                  <a href="/pdf/CV_Christina_Adelia_Sitinjak_EN.pdf" download className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium shadow-md hover:scale-105 transition-transform">
+                  <a href="/pdf/Resume_Christina_Adelia_Sitinjak.pdf" download className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium shadow-md hover:scale-105 transition-transform">
                     <Download size={16} /> Download CV
                   </a>
                   <button onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })} className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 dark:border-gray-700 text-sm hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
@@ -1003,7 +1003,7 @@ export default function Portfolio() {
                   <div className="ml-auto text-sm text-pink-500">Follow</div>
                 </a>
 
-                <a href="/pdf/CV_Christina_Adelia_Sitinjak_EN.pdf" download className="flex items-center gap-3 justify-center p-3 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium shadow hover:opacity-95 transition-opacity">
+                <a href="/pdf/Resume_Christina_Adelia_Sitinjak.pdf" download className="flex items-center gap-3 justify-center p-3 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium shadow hover:opacity-95 transition-opacity">
                   <Download size={16} /> Download CV
                 </a>
               </div>
