@@ -20,7 +20,7 @@ export const projects: Project[] = [
     image: '/projects/images/lppm.png',
     tags: ['Laravel', 'PHP', 'MySQL', 'ERD', 'BPMN', 'System Analysis'],
     role: 'Project Manager · System Analyst · Backend Developer',
-    period: '2025 – Present',
+    period: 'January 2026 – Present',
     highlights: [
       'Produced full system documentation: BPMN, use cases, ERD, CDM, PDM',
       'Designed complete database architecture and entity relationships',
@@ -64,7 +64,7 @@ export const projects: Project[] = [
     image: '/projects/images/tobareads.png',
     tags: ['Flutter', 'Dart', 'Mobile App', 'UI/UX'],
     role: 'Project Manager · System Analyst · Frontend Developer',
-    period: '2024 – 2025',
+    period: 'August 2025 – December 2025',
     highlights: [
       'Designed system architecture and coordinated the development team',
       'Analyzed user requirements and documented the full system flow',
@@ -85,7 +85,7 @@ export const projects: Project[] = [
     image: '/projects/images/uec.png',
     tags: ['PHP', 'MySQL', 'HTML', 'CSS', 'Bootstrap', 'Laravel'],
     role: 'Project Manager · System Analyst · Backend Developer',
-    period: '2024',
+    period: 'January 2025 - July 2025',
     highlights: [
       'Led the project from requirements gathering to deployment',
       'Conducted system requirements analysis and designed the database structure',
@@ -106,7 +106,7 @@ export const projects: Project[] = [
     image: '/projects/images/rkt.png',
     tags: ['Figma', 'UI/UX', 'Wireframing', 'Prototyping', 'Redesign'],
     role: 'UI/UX Designer',
-    period: '2024 – 2025',
+    period: 'June 2025',
     highlights: [
       'Redesigned the full website interface using Figma',
       'Analyzed user needs and created updated wireframes and interactive prototypes',
